@@ -5,19 +5,19 @@ package lab9;
  */
 
 public class UnitConverter {
+	/**
+	 * @param getting the amount (in double) and the units (meter, centimeter, etc.) for converting
+	 * @return return a number that is converted by multiply the amount to its unit then divide with another unit 
+	 * that we want to know the value.
+	 */
 	public double convert (double amount, Unit fromUnit, Unit toUnit){
-		/*
-		 * @param getting the amount (in double) and the units (meter, centimeter, etc.) for converting
-		 * @return return a number that is converted by multiply the amount to its unit then divide with another unit 
-		 * that we want to know the value.
-		 */
 		return ((amount*fromUnit.getValue())/toUnit.getValue());
 	}
+	
+	/**
+	 * @return return values from Length class.
+	 */
 	public Unit[] getUnits(){
-		/* 
-		 * @return return values from Length class.
-		 */
-		return Length.values();
-		
+		return Length.values();	
 	}
 }
